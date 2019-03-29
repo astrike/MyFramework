@@ -1,0 +1,33 @@
+<script>
+if ( !(navigator.userAgent.indexOf('MSIE 6') >= 0) ){
+	
+	$(document).ready(function(){
+        $(".gallery a").lightbox();
+        $.Lightbox.construct({
+            "speed": 500,
+            "show_linkback": true,
+            "keys": {
+                close:	"q",
+                prev:	"z",
+                next:	"x"
+            },
+            "opacity": 0.9,
+            text: {
+                image:		"Картинка",
+                of:			"из",
+                close:		"Закрыть",
+                closeInfo:	"Завершить просмотр можно, кликнув мышью вне картинки.",
+                help: {
+                    close:		"",
+                    interact:	"Интерактивная подсказка"
+                },
+                about: {
+                    text: 	"",
+                    title:	"",
+                    link:	"/index.html"
+                }
+            }
+        });
+    });
+}
+</script>

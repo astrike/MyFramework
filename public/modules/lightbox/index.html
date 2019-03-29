@@ -1,0 +1,69 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+    "http://www.w3.org/TR/html4/strict.dtd"
+    >
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="jquery-lightbox.css" type="text/css" rel="stylesheet" />
+    <script type="text/javascript" src="scripts/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="scripts/jquery.lightbox.js"></script>
+    <title>jquery-lightbox</title>
+</head>
+<body>
+
+
+<script>
+if ( !(navigator.userAgent.indexOf('MSIE 6') >= 0) ){
+	
+	$(document).ready(function(){
+        $(".gallery a").lightbox();
+        $.Lightbox.construct({
+            "speed": 500,
+            "show_linkback": true,
+            "keys": {
+                close:	"q",
+                prev:	"z",
+                next:	"x"
+            },
+            "opacity": 0.9,
+            text: {
+                image:		"Картинка",
+                of:			"из",
+                close:		"Закрыть",
+                closeInfo:	"Завершить просмотр можно, кликнув мышью вне картинки.",
+                help: {
+                    close:		"",
+                    interact:	"Интерактивная подсказка"
+                },
+                about: {
+                    text: 	"",
+                    title:	"",
+                    link:	"/index.html"
+                }
+            }
+        });
+    });
+}
+</script>
+
+
+	<div class="section">
+		<div class="gallery">
+			<ul class="images">
+				<li class="image">
+					<a rel="lightbox-mygallery" href="images/1.jpg" title="Капли"><img src="images/1_sm.jpg" ></a>
+				</li>
+				<li class="image">
+					<a rel="lightbox-mygallery" href="images/2.jpg" title="Еще капли"><img src="images/2_sm.jpg" ></a>
+				</li>
+				<li class="image">
+					<a rel="lightbox-mygallery" href="images/3.jpg" title="Снова капли"><img src="images/3_sm.jpg" ></a>
+				</li>
+				<li class="image">
+					<a rel="lightbox-mygallery" href="images/4.jpg" title="Опять капли"><img src="images/4_sm.jpg" ></a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>

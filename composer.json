@@ -21,7 +21,8 @@
             "Core\\": "app\\core",
             "SDK\\": "app\\SDK",
             "Models\\": "app\\models",
-            "Middleware\\": "app\\middleware"
+            "Middleware\\": "app\\middleware",
+            "Migrations\\": "database\\migrations"
         }
     },
     "require-dev": {
